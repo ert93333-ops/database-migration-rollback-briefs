@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Database migration rollback checklist | Database Migration Rollback Briefs</title>
+  <meta name="description" content="A practical database migration rollback checklist for framework, migration ID, backup, compatibility, lock risk, rollback, drift, validation, owner, and data hygiene before deploy.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Database migration rollback checklist">
+  <meta property="og:description" content="Checklist for reviewing production database migration rollback risk before deploy.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ert93333-ops.github.io/database-migration-rollback-briefs/database-migration-rollback-checklist.html">
+  <link rel="canonical" href="https://ert93333-ops.github.io/database-migration-rollback-briefs/database-migration-rollback-checklist.html">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./">Database Migration Rollback Briefs</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="./#workflow">Workflow</a>
+        <a href="./#pricing">Pricing</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <article class="section">
+      <div class="shell article-body">
+        <p class="brief-label">Checklist</p>
+        <h1>Database migration rollback checklist</h1>
+        <p>Use this before approving a production database migration. Keep database URLs, credentials, connection strings, dumps, customer rows, raw logs, account IDs, PII, and production data out of public tools.</p>
+
+        <h2>1. State the migration scope</h2>
+        <ul>
+          <li>Framework, command, migration ID/version, environment, table, column, index, and data/backfill scope</li>
+          <li>App version or deploy order tied to the migration</li>
+          <li>Named owner and reviewer</li>
+        </ul>
+
+        <h2>2. Check backup and compatibility</h2>
+        <ul>
+          <li>Snapshot, backup, restore owner, and recovery decision path</li>
+          <li>Expand-contract compatibility, nullable/default behavior, dual-write/read path, and backfill plan</li>
+          <li>Production, staging, or sanitized schema validation context</li>
+        </ul>
+
+        <h2>3. Review runtime and rollback risk</h2>
+        <ul>
+          <li>Lock, long-running query, transaction, DDL, concurrent index, downtime, and maintenance-window risk</li>
+          <li>Rollback, reverse/down migration, previous version, restore plan, and failed-migration resolution path</li>
+          <li>Drift, manual hotfix, schema history, migration table, or edited/deleted migration status</li>
+        </ul>
+
+        <h2>4. Validate and protect private data</h2>
+        <ul>
+          <li>Run migration status, smoke test, query checks, metrics, monitoring, and error-rate review.</li>
+          <li>Avoid reset/drop/recreate/force-apply/no-backup language unless the risk and approval path are explicit.</li>
+          <li>Do not paste database URLs, credentials, connection strings, dumps, customer rows, raw logs, account IDs, PII, or production data.</li>
+        </ul>
+
+        <p><a class="button primary" href="./?utm_source=seo&utm_medium=organic&utm_campaign=database_migration_rollback_template#workflow">Generate a migration rollback brief</a></p>
+      </div>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <p>Browser-local database migration review. No DB connection, SQL execution, migration execution, backup/restore automation, dumps, credentials, or production data.</p>
+      <a href="./">Database Migration Rollback Briefs</a>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
