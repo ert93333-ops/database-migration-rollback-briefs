@@ -6,6 +6,7 @@ Static browser-local MVP for turning public-safe database migration notes or scr
 
 - Landing: `https://ert93333-ops.github.io/database-migration-rollback-briefs/`
 - Checklist: `https://ert93333-ops.github.io/database-migration-rollback-briefs/database-migration-rollback-checklist.html`
+- Paid pilot: `https://ert93333-ops.github.io/database-migration-rollback-briefs/paid-pilot.html`
 - Public marketing checklist: `https://gist.github.com/ert93333-ops/d5f20e7a80e3617dcafeb36e576c9902`
 
 ## Scope
